@@ -1,0 +1,28 @@
+{
+  "name": "obs-teacher-lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run stop && docker-compose build && docker-compose up",
+    "stop": "docker-compose down || docker-compose stop",
+    "watch": "nodemon --exec npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PercyODI/obs-teacher-lab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PercyODI/obs-teacher-lab/issues"
+  },
+  "homepage": "https://github.com/PercyODI/obs-teacher-lab#readme",
+  "dependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "nodemonConfig":{
+    "ext": "js,vue,json,md,yml,dockerignore"
+  }
+}
